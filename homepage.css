@@ -1,0 +1,19 @@
+body {
+    background-image: url("./House1.jpg");
+    background-size: 100%;
+}
+
+div {
+    background-color: red;
+}
+
+#www {
+    background-color: blue;
+    color: white;
+    width: 12%
+}
+
+div.img{
+    height: 1%;
+    width: 10%;
+}
