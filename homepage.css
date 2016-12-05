@@ -1,10 +1,7 @@
 body {
-    background-image: url("./House1.jpg");
-    background-size: 100%;
-}
-
-div {
-    background-color: red;
+    background-image: url("./128-213.jpg");
+    background-size: 10px;
+    background-repeat: repeat;
 }
 
 #www {
@@ -16,4 +13,18 @@ div {
 div.img{
     height: 1%;
     width: 10%;
+}
+
+.navbar-default {
+    background-clip: background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(darkgray));
+    background-image: -webkit-linear-gradient(top, white, darkgray);
+    background-image: -moz-linear-gradient(top, white, darkgray);
+    background-image: linear-gradient(to bottom, white, darkgray);
+}
+
+iframe{
+    margin-top: 100px;
+    text-align: center;
+    height: 800px;
+    width: 100%;
 }

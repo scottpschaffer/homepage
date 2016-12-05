@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <title>Scott P. Schaffer</title>
     <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="qqq">
-        <p>This is the homepage of Scott Schaffer</p>
-    </div>
-    <div id="www">
-        <p>This is me</p>
-        <img src="./ScottPhoto1.jpg" alt="Scott Schaffer" height="100" width="140">
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Scott Schaffer</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">About Scott</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-xs-offset-4 col-xs-4">
+            <iframe src="./about.html" frameborder="1" name="infoFrame"></iframe>
+        </div>
     </div>
     <div id="eee">
 
     </div>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

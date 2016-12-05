@@ -1,0 +1,18 @@
+body{
+    background-image: url("./House1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black
+}
+
+h1{
+    margin-top: 10px;
+    color: darkolivegreen;
+    text-align: right;
+}
+
+p {
+    margin-top: 150px;
+    text-align: left;
+    color: ghostwhite;
+}
