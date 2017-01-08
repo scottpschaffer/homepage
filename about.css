@@ -11,9 +11,7 @@ h1{
     text-align: center;
 }
 
-span {
-    margin-top: 150px;
-    text-align: left;
+p {
     color: darkblue;
 }
 
@@ -21,4 +19,17 @@ img {
     max-width: 100%;
     display: block;
     height: auto;
+}
+
+.lefty {
+    
+}
+
+.righty {
+    float: right;
+}
+
+h3 {
+    display: block;
+    clear: both;
 }
