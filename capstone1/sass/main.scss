@@ -1,0 +1,49 @@
+.background1 {
+  background-color: #bf8040;
+  background-image: url(/images/tips-for-paying-off-credit-card-debt.jpg);
+  background-size: 100vh;
+  background-repeat: repeat-x;
+}
+
+.cardSales {
+  border: 3px solid black;
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+
+.cardQuestions {
+  border: 3px solid black;
+  margin: 5px;
+  background-color: white;
+}
+
+header, footer {
+  background-color: #ffffcc;
+  text-align: left;
+}
+
+p {
+  border: 3px dotted black;
+  font-weight: bold;
+  background-color: #e1bc9d;
+}
+
+label {
+  color: red;
+  margin-left: 30px;
+}
+
+input {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: #f9f2ec;
+}
+
+.addr1 {
+  length: 50px;
+}
+
+h1, h2, h3 {
+  color: red;
+}

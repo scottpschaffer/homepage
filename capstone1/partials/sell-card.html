@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-md-offset-4">
+    <label>MERCHANT</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-offset-4">
+    <input type="text" class="col-md-3" placeholder="Card Merchant" ng-model="card.merchant">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-offset-4">
+    <label>CARD VALUE</label>
+    <label>EXP DATE</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-offset-4">
+    <input type="text" placeholder="Card Value" ng-model="card.value">
+    <input type="text" placeholder="Expiration Date" ng-model="card.expirationDate">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-offset-4">
+    <label>CARD DETAILS</label>
+  </div>
+</div>
+  <div class="col-md-offset-4">
+    <textarea ng-model="card.details">Details</textarea>
+  </div>
+  <div class="col-md-offset-4">
+    <button id="saveButton" ng-disabled="disable" ng-click="sellCard(card.id)">Save</button>
+    <button ng-click="cancelButton()">Cancel</button>
+  </div>
+
+  <hr>
+<h3>Cards I'm Selling:</h3>
+
+  <article class="cardSales" ng-repeat="card in cards">
+    <header><button class="question" ng-click="questionResponse(card.id)">QUESTION</button></header>
+    <section ng-click="getCard(card.id)">
+      <p>{{card.merchant}}</p>
+      <p>{{card.value}}</p>
+      <p>{{card.isDone}}</p>
+    </section>
+    <footer><button ng-click="editCard(card.id)">Edit</button><button ng-click="deleteCard(card.id)">Delete</button></footer>
+  </article>
+  <!-- </div> -->

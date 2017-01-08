@@ -1,0 +1,60 @@
+
+<div class="col-md-offset-5">
+  <label>FULL NAME</label>
+</div>
+<div class="col-md-offset-5">
+  <input type="text" placeholder="Full Name" ng-model="person.name">
+</div>
+<div class="col-md-offset-5">
+  <label>STREET ADDRESS</label>
+</div>
+<div class="col-md-offset-5">
+  <input type="text" placeholder="Street Address" ng-model="person.streetAddress">
+</div>
+<div class="row">
+  <div class="col-md-3 col-md-offset-2">
+    <label>CITY</label>
+  </div>
+  <div class="col-md-2">
+    <label>State</label>
+  </div>
+  <div class="col-md-1">
+    <label>ZIP</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-offset-2">
+  <input type="text" placeholder="City" class="col-md-2" ng-model="person.city">
+  </div>
+  <div>
+    <input type="text" placeholder="State" class="col-md-offset-1 col-md-1" ng-model="person.state">
+  </div>
+  <div>
+    <input type="text" placeholder="ZIP Code" class="col-md-offset-1 col-md-1" ng-model="person.zipCode">
+  </div>
+</div>
+<div class="col-md-offset-5">
+  <label>E-MAIL</label>
+</div> 
+<div class="col-md-offset-5">
+  <input type="text" placeholder="E-mail Address" ng-model="person.emailAddress">
+</div>
+<div class="col-md-offset-5">
+  <button ng-click="addUser(person.id)">Save</button>
+  <button ng-click="getUser()">Cancel</button>
+</div>
+<hr>
+<h3>Questions For Me:</h3>
+<div>
+  <article class="cardQuestions" ng-repeat="question in myQuestions">
+    <header>QUESTION from {{question.name}} regarding {{question.merchant}} card</header>
+    <section>
+      <p>{{question.text}}</p>
+    </section>
+    <footer>
+      <input type="text" class="col-md-3" name="reply" placeholder="Enter Reply To Question" ng-model="questionReply">
+      <button ng-click="newResponse(question.id, question.card, questionReply, question.originator)">Submit</button>
+      <button ng-click="deleteQuestion(question.id)">Delete</button>
+    </footer>
+  </article>
+</div>
