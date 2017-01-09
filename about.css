@@ -19,10 +19,11 @@ img {
     max-width: 100%;
     display: block;
     height: auto;
+    margin: 0 5px;
 }
 
 .lefty {
-    
+    float: left;
 }
 
 .righty {
@@ -32,4 +33,6 @@ img {
 h3 {
     display: block;
     clear: both;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
 }

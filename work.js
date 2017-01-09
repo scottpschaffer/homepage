@@ -20,3 +20,10 @@ function onclick3(){
 }); 
 }
 
+function onclick4(){
+    $('.nav.navbar-nav > li').on('click', function(e) {
+    $('.nav.navbar-nav > li').removeClass('active');
+    $(this).addClass('active');
+}); 
+}
+
